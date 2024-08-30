@@ -1,0 +1,38 @@
+ecom -api
+
+//registration - post
+http://localhost:3001/api/auth/register
+{
+    "firstname":"selvi",
+    "lastname":"kumari",
+    "email":"kumar@gmail.com",
+    "password":"Selva@123",
+    "mobile":"9876543211"
+}
+
+//login - post
+http://localhost:3001/api/auth/login
+
+{
+    "email":"selva@gmail.com",
+    "password":"Selva@123"
+}
+
+//list users - get
+http://localhost:3001/api/user/all-users
+
+//user by id  - get
+http://localhost:3001/api/user/66d065c4e9c80c3e905a86c8
+
+//delete user - get
+http://localhost:3001/api/user/66d05ea38409faccdf0db7bd
+
+//updtae by id - post
+http://localhost:3001/api/user/66d065c4e9c80c3e905a86c8
+{
+    "firstname":"selvkumar",
+    "lastname":"kumariiiii",
+    "email":"kumariiii@gmail.com",
+    "password":"Selva@1234",
+    "mobile":"9876543212"
+}
